@@ -10,13 +10,13 @@ function Footer() {
 
       <div className=''>
         
-          <div className='flex gap-10  m-auto items-center justify-center  mt-36  '>
+          <div className='flex gap-10  m-auto items-center justify-center  mt-60  '>
 <a href="https://www.instagram.com/viki__west/" target='_blank'><img src={Instagram} alt="" /></a>
 <a href="https://www.linkedin.com/in/victory-olorunda-aa615030a/" target='_blank'><img src={LinkedIn} alt="" /></a>
 <a href="mailto:chidiolorunda@gmail.com" target='_blank'><img src={Mail} alt="" /></a>
       </div>
       <p className='mt-5 text-center text-grey'>&copy;Olorunda Victory 2024</p>
-      <img className='w-full -mt-5 ' src={Footerimg} alt="" />
+      <img className='w-full -mt- ' src={Footerimg} alt="" />
     </div>
     </>
   )

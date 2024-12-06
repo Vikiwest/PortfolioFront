@@ -6,7 +6,7 @@ import Form from "../Form/form";
 function About() {
   return (
     <div className="">
-      <div className="w-[80%] max-w-[90%] m-auto mt-14 flex flex-wrap justify-between">
+      <div className="w-[80%]  m-auto mt-14 flex flex-wrap justify-between">
         <div className="w-[700px]">
           <h1 className="heroheader font-bold text-6xl leading-snug">
             About me
