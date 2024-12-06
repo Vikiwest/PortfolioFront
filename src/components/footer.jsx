@@ -16,7 +16,7 @@ function Footer() {
 <a href="mailto:chidiolorunda@gmail.com" target='_blank'><img src={Mail} alt="" /></a>
       </div>
       <p className='mt-5 text-center text-grey'>&copy;Olorunda Victory 2024</p>
-      <img className='w-full -mt-10 ' src={Footerimg} alt="" />
+      <img className='w-full -mt-5 ' src={Footerimg} alt="" />
     </div>
     </>
   )

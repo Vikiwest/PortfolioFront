@@ -51,7 +51,7 @@ const ContactForm = () => {
   };
 
   return (
-    <div className="max-w-[400px] max-h-auto mx-auto p-6">
+    <div className="max-w-[400px]  max-h-auto mx-auto p-6">
       <h2 className="proj-header font-bold text-5xl text-center">Contact</h2>
       <div className="mb-14 mt-5 h-[4px] w-[100px] m-auto bg-brandyellow rounded-full" />
       <form onSubmit={handleSubmit} className="flex flex-col gap-4">

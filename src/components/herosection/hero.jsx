@@ -10,10 +10,10 @@ function Hero() {
     <div className="absolute shadow-xl bg-brandyellow rounded-r-full w-[95%]   h-[600px] z-10 ">
     <div className="w-[80%] m-auto  mt-14 flex  flex-wrap justify-between">
       <div className="w-[700px]">
-        <p className=" skilltxt text-white font-bold text-2xl">
+        <p className=" skilltxt text-white font-bold text-lg">
           WEB DEVELOPER
         </p>
-        <h1 className="heroheader font-bold text-6xl leading-snug">
+        <h1 className="heroheader font-bold text-5xl leading-snug">
           Hello, my name is Olorunda Victory
         </h1>
 
