@@ -6,7 +6,7 @@ function Navheading() {
   return (
     <div className='font-bold text-lg '>
        <Link to="/" className=" items-center hover:text-brandyellow transition duration-200 flex gap-2">
-      <h1 className=' '>Victory </h1>
+      <h1 className=' '>Viki_west </h1>
       <IoMdHome className='headername animate-color-change hover:animate-none'/>
      </Link>
     </div>
