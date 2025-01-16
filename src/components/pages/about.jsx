@@ -11,7 +11,7 @@ function About() {
           <h1 className="heroheader font-bold text-6xl leading-snug">
             About me
           </h1>
-          <p className="short-description tracking-tighter text-grey text-2xl mt-5 textjustify">
+          <p className="short-description tracking-tighter text-grey text-xl mt-5 text-justify">
             From a young age, I have always been captivated by the world of
             technology. As a curious boy, I often found myself dismantling
             computers and gadgets around my childhood home, driven by a
