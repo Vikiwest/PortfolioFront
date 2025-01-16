@@ -137,14 +137,11 @@ button{
 .linkedin-btn:hover{
 background-color: #ffff;
 }
-/* .github-btn:hover  {
-  background-color: #FDC435; 
-} */
+
 
 
 .github-btn {
   --btn-default-bg: #ffff;
-  /* --btn-padding: 15px 20px; */
   --btn-hover-bg: #FAF9F6;
   --btn-transition: .3s;
   --btn-letter-spacing: .1rem;
@@ -154,44 +151,19 @@ background-color: #ffff;
   --hover-btn-color: #FAC921;
   --default-btn-color: #fff;
   --font-size: 16px;
-  /* 👆 this field should not be empty */
-  /* --font-weight: 600; */
-  /* --font-family: Menlo,Roboto Mono,monospace; */
-  /* 👆 this field should not be empty */
 }
 
 /* button settings 👆 */
 
 .github-btn {
   box-sizing: border-box;
-  /* padding: var(--btn-padding); */
-  /* display: flex; */
-  /* align-items: center; */
-  /* justify-content: center; */
   color: var(--default-btn-color);
-  /* font: var(--font-weight) var(--font-size) var(--font-family); */
   background: var(--btn-default-bg);
-  /* border: none; */
-  /* cursor: pointer;/ */
   transition: var(--btn-transition);
-  /* overflow: hidden; */
   box-shadow: var(--btn-shadow);
 }
 
-/* .ui-btn span {
-  letter-spacing: var(--btn-letter-spacing);
-  transition: var(--btn-transition);
-  box-sizing: border-box;
-  position: relative;
-  background: inherit;
-}
 
-.ui-btn span::before {
-  box-sizing: border-box;
-  position: absolute;
-  content: "";
-  background: inherit;
-} */
 
 .github-btn:hover, .github-btn:focus {
   background: var(--btn-hover-bg);

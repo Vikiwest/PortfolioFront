@@ -1,7 +1,11 @@
-// import React from "react";
+import React from "react";
 import Viewprojbtn from "./viewprojbtn";
 import WeatherApp from "../../assets/WeatherAPP.png";
 import Bngoon from "../../assets/Bngoon.png"
+import ActiveCatering from "../../assets/ActiveCatering.png";
+import Tariq from "../../assets/99Fashion.png";
+import myPortfolio from "../../assets/PortfolioProject.png"
+
 function Projects() {
   return (
     <div id="projects" className="mt-[205px]">
@@ -48,6 +52,62 @@ function Projects() {
         </div>
        
       </div>
+
+
+      <div className="m-auto w-[90%] md:w-[70%] flex flex-wrap mt-20  rounded-lg ">
+        <div className="w-full md:w-[666px] h-auto bg-OffWhite shadow-lg  rounded-l-3xl pt-10 pl-9 pr-9 ">
+          <h2 className="weather-app text-[32px] md:text-[40px] font-bold leading-[1.5]">
+            Active Catering Craft
+          </h2>
+          <p className="weather-app-desc text-grey text-[18px] leading-[px]">
+            I created this simple website for a client using html, css and Javascript. This website helps my clients customers to have direct access to her because she had previously complained about people pretending to be her and selling her books online. So i just created something simple and user friendly so her customers can easily navigate through the website and find her and get in touch with her easily.
+          </p>
+          <div className="mt-8 mb-5">
+            <a href="https://vikiwest.github.io/active-catering-craft-practice/products.html" target='_blank'><Viewprojbtn /></a>
+          </div>
+        </div>
+        <div className="w-full md:w-[666px] h-auto">
+          <img className="rounded-r-3xl    shadow-lg " src={ActiveCatering} alt="" />
+        </div>
+      </div>
+
+      
+      <div className="m-auto w-[90%] md:w-[70%] flex flex-wrap mt-20   ">
+ <div className="w-full md:w-[666px] h-auto">
+          <img className="rounded-l-3xl    shadow-lg " src={Tariq} alt="" />
+        </div>
+
+        <div className="w-full md:w-[666px] h-auto bg-OffWhite shadow-lg  rounded-r-3xl pt-10 pl-9 pr-9 ">
+          <h2 className="weather-app text-[32px] md:text-[40px] font-bold leading-[1.5]">
+          99Tariq Fashion
+          </h2>
+          <p className="weather-app-desc text-grey text-[18px] leading-[px]">
+            This was one of the first demo websites i created using just Html and Css. It is Ui responsive and adjusts to  all screen sizes.
+          </p>
+          <div className="mt-8 mb-5">
+           <a href="https://vikiwest.github.io/99Tariq-Fashion/" target="_blank"> <Viewprojbtn /></a>
+          </div>
+        </div>
+      </div>
+
+
+      <div className="m-auto w-[90%] md:w-[70%] flex flex-wrap mt-20  rounded-lg ">
+        <div className="w-full md:w-[666px] h-auto bg-OffWhite shadow-lg  rounded-l-3xl pt-10 pl-9 pr-9 ">
+          <h2 className="weather-app text-[32px] md:text-[40px] font-bold leading-[1.5]">
+            My Portfolio
+          </h2>
+          <p className="weather-app-desc text-grey text-[18px] leading-[px]">
+            I created this website using React and tailwindcss.I added a little bit of backend functionality to it so that users can send me emails directly from the website, using nodemailer. It is user friendly and adjusts to all screen sizes.
+          </p>
+          <div className="mt-8 mb-5">
+            <a href="https://portfoliofront-nppt.onrender.com/contact" target='_blank'><Viewprojbtn /></a>
+          </div>
+        </div>
+        <div className="w-full md:w-[666px] h-auto">
+          <img className="rounded-r-3xl    shadow-lg " src={myPortfolio} alt="" />
+        </div>
+      </div>
+
     </div>
   );
 }
