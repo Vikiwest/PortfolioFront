@@ -13,8 +13,8 @@ function Skills() {
   return (
     <div className='mt-[950px]  w-[80%] m-auto text-center'>
       <h1 className='heroheader font-bold text-6xl leading-snug'>Skills</h1>
-      <div className=" h-[4px]   w-[100px] m-auto bg-brandyellow rounded-full" />
-      <div className='flex justify-center mt-20 gap-10 m-auto w-[90%] md:w-[70%]'>
+      <div className=" h-[4px]   w-[100px] m-auto bg-brandyellow rounded-full"  />
+      <div className='flex flex-wrap justify-center mt-20 gap-10 m-auto w-[90%] md:w-[70%]'>
         <div className='flex flex-wrap gap-16'>
           <div>
             <p className='skilltxt font-semibold'>Html</p>
