@@ -5,6 +5,8 @@ import Js from "../../icons/Js.svg"
 import react from '../../icons/reactjs.svg'
 import Tailwind from '../../icons/tailwind-css.svg'
 import Nodejs from '../../icons/nodejs.svg'
+import Express from '../../icons/express-original.svg'
+import Mongodb from '../../icons/mongodb-original.svg'
 
 
 function Skills() {
@@ -49,6 +51,20 @@ function Skills() {
             <p className='skilltxt font-semibold'>Nodejs</p>
          <img className='h-24 w-24 ' src={Nodejs} alt="" />
           </div>
+          
+        </div>
+
+        <div className='flex flex-wrap gap-16'>
+          <div>
+          <p className='skilltxt font-semibold'>Express</p>
+         <img className='h-24 w-24 ' src={Express} alt="" />
+          </div>
+
+          <div>
+            <p className='skilltxt font-semibold'>Mongodb</p>
+         <img className='h-24 w-24 ' src={Mongodb} alt="" />
+          </div>
+
         </div>
 
       </div>
