@@ -24,7 +24,7 @@ function Nav() {
 
         <button
           onClick={toggleMenu}
-          className="text-2xl md:hidden focus:outline-none hover:text-blue-600 transition duration-200 shadow-lg h-7"
+          className="text-2xl md:hidden focus:outline-none hover:text-blue-600 transition duration-200 "
           aria-label="Toggle navigation"
         >
           ☰
