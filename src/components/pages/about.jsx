@@ -1,7 +1,7 @@
-import React from "react";
+// import React from "react";
 import Resumebtn from "../pages/resumebtn";
 import AboutImage from "../../assets/Aboutimage.png";
-import Form from "../Form/form";
+// import Form from "../Form/form";
 
 function About() {
   return (
@@ -53,7 +53,7 @@ function About() {
 
       {/* Include the Form component here */}
       <div className=" mx-auto justify-center mt-24 mb-96">
-        <Form />
+        {/* <Form /> */}
       </div>
     </div>
   );

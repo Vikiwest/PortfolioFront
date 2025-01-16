@@ -1,4 +1,4 @@
-import React from 'react'
+// import React from 'react'
 import Footerimg from "../assets/footer.png"
 import Instagram from "../icons/Instagram.svg"
 import LinkedIn from "../icons/LinkedIn.svg"
