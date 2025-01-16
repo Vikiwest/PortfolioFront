@@ -19,35 +19,36 @@ const ContactForm = () => {
     }));
   };
 
-const handleSubmit = async (e) => {
-  e.preventDefault();
-  setIsSubmitting(true);
-  console.log(formData);
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    setIsSubmitting(true);
+    console.log(formData);
 
-  try {
-    const response = await fetch(
-      "https://portfolio-zkup.onrender.com/send-email",
-      {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(formData),
+    try {
+      // Send form data to backend to send email
+      const response = await fetch(
+        "https://portfolio-zkup.onrender.com/send-email",
+        {
+          // Change to your backend URL if different
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify(formData),
+        }
+      );
+
+      if (response.ok) {
+        setSubmitted(true);
+        setFormData({ name: "", email: "", message: "" });
+        toast.success("Form submitted successfully");
+      } else {
+        console.error("Failed to send email");
       }
-    );
-
-    if (!response.ok) {
-      throw new Error(`HTTP error! Status: ${response.status}`);
+    } catch (error) {
+      console.error("Error:", error);
+    } finally {
+      setIsSubmitting(false);
     }
-
-    setSubmitted(true);
-    setFormData({ name: "", email: "", message: "" });
-    toast.success("Form submitted successfully");
-  } catch (error) {
-    console.error("Error:", error);
-    toast.error(`Failed to submit form: ${error.message}`);
-  } finally {
-    setIsSubmitting(false);
-  }
-};
+  };
 
   return (
     <div className="max-w-[400px]  max-h-auto mx-auto p-6">
