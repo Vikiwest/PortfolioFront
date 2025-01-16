@@ -1,4 +1,4 @@
-import { Routes, Route, useLocation } from "react-router-dom";
+import { BrowserRouter as Router, Route, Routes, useLocation } from "react-router-dom";
 import { useState, useEffect } from "react";
 import Navbar from "./components/navbar/nav";
 import Herosection from "./components/herosection/hero";
@@ -42,11 +42,14 @@ function App() {
                 <>
                 <Navbar />
                     {location.pathname === '/' && <Herosection />}
+                    <Router>
                     <Routes>
                         <Route path="/" element={<><Herosection /><Skills /><Projects /></>} />
                         <Route path="/about" element={<About />} />
                         <Route path="/contact" element={<Form />} />
+                        <Route path="*" element={<NotFound />} /> {/* Catch-all route */}
                     </Routes>
+                    </Router>
                     <Footer />
                 </>
             )}
