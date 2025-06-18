@@ -28,7 +28,6 @@ const ContactForm = () => {
       // Send form data to backend to send email
       const response = await fetch(
         "https://portfolio-zkup.onrender.com/send-email",
-        // "https://portfolio-zkup.onrender.com/send-email",
         {
           // Change to your backend URL if different
           method: "POST",
