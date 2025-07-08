@@ -2,11 +2,16 @@
 import Html from "../../icons/html.svg"
 import Css from "../../icons/css.svg"
 import Js from "../../icons/Js.svg"
+import Ts from "../../icons/typescript_5968381.png"
 import react from '../../icons/reactjs.svg'
+import Next from '../../icons/nextjs-icon-svgrepo-com.svg'
 import Tailwind from '../../icons/tailwind-css.svg'
+import Bootstrap from '../../icons/bootstrap_5968672.png'
 import Nodejs from '../../icons/nodejs.svg'
 import Express from '../../icons/express-original.svg'
 import Mongodb from '../../icons/mongodb-original.svg'
+import Wordpress from '../../icons/wordpress-logo_63737.png'
+
 
 
 function Skills() {
@@ -34,10 +39,18 @@ function Skills() {
             <p className='skilltxt font-semibold'>Javascript</p>
          <img className='h-24 w-24 ' src={Js} alt="" />
           </div>
+          <div>
+            <p className='skilltxt font-semibold'>Typescript</p>
+         <img className='h-24 w-24 ' src={Ts} alt="" />
+          </div>
 
           <div>
-            <p className='skilltxt font-semibold'>React</p>
+            <p className='skilltxt font-semibold'>ReactJs</p>
          <img className='h-24 w-24 animate-spin-slow' src={react} alt="" />
+          </div>
+          <div>
+            <p className='skilltxt font-semibold'>NextJs</p>
+         <img className='h-24 w-24' src={Next} alt="" />
           </div>
         </div>
 
@@ -45,6 +58,10 @@ function Skills() {
           <div>
           <p className='skilltxt font-semibold'>Tailwindcss</p>
          <img className='h-24 w-24 ' src={Tailwind} alt="" />
+          </div>
+          <div>
+          <p className='skilltxt font-semibold'>Bootstrap</p>
+         <img className='h-24 w-24 ' src={Bootstrap} alt="" />
           </div>
 
           <div>
@@ -63,6 +80,10 @@ function Skills() {
           <div>
             <p className='skilltxt font-semibold'>Mongodb</p>
          <img className='h-24 w-24 ' src={Mongodb} alt="" />
+          </div>
+          <div>
+            <p className='skilltxt font-semibold'>WordPress</p>
+         <img className='h-24 w-24 ' src={Wordpress} alt="" />
           </div>
 
         </div>
