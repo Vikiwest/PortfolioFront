@@ -1,4 +1,4 @@
-import React from "react";
+// import React from "react";
 import Viewprojbtn from "./viewprojbtn";
 import WeatherApp from "../../assets/WeatherAPP.png";
 import Bngoon from "../../assets/Bngoon.png";
@@ -15,7 +15,7 @@ function Projects() {
       <div className="mt-5 h-[4px]  w-[100px] m-auto bg-brandyellow rounded-full" />
 
       <div className="m-auto w-[90%] md:w-[70%] flex flex-wrap mt-20  rounded-lg ">
-        <div className="w-full md:w-[666px] h-auto bg-OffWhite shadow-lg  rounded-l-3xl pt-10 pl-9 pr-9 space-y-3">
+        <div className="w-full md:w-[666px] h-auto bg-OffWhite shadow-lg  rounded-l-3xl pt-10 pl-9 pr-9 pb-4 space-y-3">
           <h2 className="weather-app text-[32px] md:text-[40px] font-bold leading-[1.5]">
             Weather App
           </h2>
@@ -46,7 +46,7 @@ function Projects() {
           <img className="rounded-l-3xl    shadow-lg " src={Bngoon} alt="" />
         </div>
 
-        <div className="w-full md:w-[666px] h-auto bg-OffWhite shadow-lg  rounded-r-3xl pt-10 pl-9 pr-9 space-y-3">
+        <div className="w-full md:w-[666px] h-auto bg-OffWhite shadow-lg  rounded-r-3xl pt-10 pl-9 pr-9 pb-4 space-y-3">
           <h2 className="weather-app text-[32px] md:text-[40px] font-bold leading-[1.5]">
             Bngoon E-commerse
           </h2>
@@ -64,7 +64,7 @@ function Projects() {
       </div>
 
       <div className="m-auto w-[90%] md:w-[70%] flex flex-wrap mt-20  rounded-lg ">
-        <div className="w-full md:w-[666px] h-auto bg-OffWhite shadow-lg  rounded-l-3xl pt-10 pl-9 pr-9 space-y-3">
+        <div className="w-full md:w-[666px] h-auto bg-OffWhite shadow-lg  rounded-l-3xl pt-10 pl-9 pr-9 pb-4 space-y-3">
           <h2 className="weather-app text-[32px] md:text-[40px] font-bold leading-[1.5]">
             Active Catering Craft
           </h2>
@@ -100,7 +100,7 @@ function Projects() {
           <img className="rounded-l-3xl    shadow-lg " src={Tariq} alt="" />
         </div>
 
-        <div className="w-full md:w-[666px] h-auto bg-OffWhite shadow-lg  rounded-r-3xl pt-10 pl-9 pr-9 space-y-3">
+        <div className="w-full md:w-[666px] h-auto bg-OffWhite shadow-lg  rounded-r-3xl pt-10 pl-9 pr-9 pb-4 space-y-3">
           <h2 className="weather-app text-[32px] md:text-[40px] font-bold leading-[1.5]">
             99Tariq Fashion
           </h2>
@@ -121,7 +121,7 @@ function Projects() {
       </div>
 
       <div className="m-auto w-[90%] md:w-[70%] flex flex-wrap mt-20  rounded-lg ">
-        <div className="w-full md:w-[666px] h-auto bg-OffWhite shadow-lg  rounded-l-3xl pt-10 pl-9 pr-9 space-y-3">
+        <div className="w-full md:w-[666px] h-auto bg-OffWhite shadow-lg  rounded-l-3xl pt-10 pl-9 pr-9 pb-4 space-y-3">
           <h2 className="weather-app text-[32px] md:text-[40px] font-bold leading-[1.5]">
             My Portfolio
           </h2>
@@ -157,7 +157,7 @@ function Projects() {
             alt="h-[500px]"
           />
         </div>
-        <div className="w-full md:w-[666px] h-auto bg-OffWhite shadow-lg  rounded-r-3xl pt-10 pl-9 pr-9 space-y-3">
+        <div className="w-full md:w-[666px] h-auto bg-OffWhite shadow-lg  rounded-r-3xl pt-10 pl-9 pr-9 pb-4 space-y-3">
           <h2 className="weather-app text-[32px] md:text-[40px] font-bold leading-[1.5]">
             Sabitok
           </h2>
