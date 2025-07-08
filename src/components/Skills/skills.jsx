@@ -43,6 +43,9 @@ function Skills() {
             <p className='skilltxt font-semibold'>Typescript</p>
          <img className='h-24 w-24 ' src={Ts} alt="" />
           </div>
+        </div>
+
+        <div className='flex flex-wrap gap-16'>
 
           <div>
             <p className='skilltxt font-semibold'>ReactJs</p>
@@ -64,18 +67,22 @@ function Skills() {
          <img className='h-24 w-24 ' src={Bootstrap} alt="" />
           </div>
 
-          <div>
-            <p className='skilltxt font-semibold'>Nodejs</p>
-         <img className='h-24 w-24 ' src={Nodejs} alt="" />
-          </div>
           
         </div>
 
         <div className='flex flex-wrap gap-16'>
           <div>
+            <p className='skilltxt font-semibold'>Nodejs</p>
+         <img className='h-24 w-24 ' src={Nodejs} alt="" />
+          </div>
+          <div>
           <p className='skilltxt font-semibold'>Express</p>
          <img className='h-24 w-24 ' src={Express} alt="" />
           </div>
+
+        </div>
+
+        <div className='flex flex-wrap gap-16'>
 
           <div>
             <p className='skilltxt font-semibold'>Mongodb</p>
@@ -85,8 +92,7 @@ function Skills() {
             <p className='skilltxt font-semibold'>WordPress</p>
          <img className='h-24 w-24 ' src={Wordpress} alt="" />
           </div>
-
-        </div>
+</div>
 
       </div>
     
