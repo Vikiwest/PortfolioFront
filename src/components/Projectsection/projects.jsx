@@ -8,12 +8,37 @@ import myPortfolio from "../../assets/PortfolioProject.png";
 import sabitok from "../../assets/sabitok.png";
 import EduManager from "../../assets/Edu-manager.png";
 import Myxellia from "../../assets/Myxellia.png";
+import AuthApp from "../../assets/AuthApp.png";
 
 function Projects() {
   return (
     <div id="projects" className="mt-[205px]">
       <h2 className="proj-header font-bold text-5xl text-center ">Projects</h2>
       <div className="mt-5 h-[4px]  w-[100px] m-auto bg-brandyellow rounded-full" />
+
+      <div className="m-auto w-[90%] md:w-[70%] flex flex-wrap mt-20   ">
+        <div className="w-full md:w-[666px] h-auto">
+          <img className="rounded-l-3xl    shadow-lg " src={AuthApp} alt="" />
+        </div>
+
+        <div className="w-full md:w-[666px] h-auto bg-OffWhite shadow-lg  rounded-r-3xl pt-10 pl-9 pr-9 pb-4 space-y-3">
+          <h2 className="weather-app text-[32px] md:text-[40px] font-bold leading-[1.5]">
+            Auth App
+          </h2>
+          <p className="weather-app-desc text-grey text-[18px] leading-[px]">
+            Just a simple dashboard that has activity logs, and file uploads
+          </p>
+          <div className="mt-8 mb-5">
+            <a
+              href="https://auth-file-upload-dashboard.vercel.app/"
+              target="_blank"
+            >
+              {" "}
+              <Viewprojbtn />
+            </a>
+          </div>
+        </div>
+      </div>
 
       <div className="m-auto w-[90%] md:w-[70%] flex flex-wrap mt-20  rounded-lg ">
         <div className="w-full md:w-[666px] h-auto bg-OffWhite shadow-lg  rounded-l-3xl pt-10 pl-9 pr-9 pb-4 space-y-3">
