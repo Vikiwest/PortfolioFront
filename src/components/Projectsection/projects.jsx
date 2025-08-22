@@ -30,7 +30,7 @@ function Projects() {
           </p>
           <div className="mt-8 mb-5">
             <a
-              href="https://auth-file-upload-dashboard.vercel.app/"
+              href="https://auth-file-upload-dashboard-jvmmrq3xx-olorunda-victorys-projects.vercel.app/"
               target="_blank"
             >
               {" "}
