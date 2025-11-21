@@ -13,10 +13,10 @@ function Experience() {
         "Led development of Next.js application with REST API integration, improving page speed by 25%",
         "Designed reusable UI components with Tailwind CSS, reducing development time by 30%",
         "Ensured 100% WCAG accessibility compliance through code reviews and debugging",
-        "Spearheaded UI development for Sabitok platform delivering fast-loading, engaging user experience"
+        "Spearheaded UI development for Sabitok platform delivering fast-loading, engaging user experience",
       ],
       technologies: ["Next.js", "JavaScript", "Tailwind CSS", "FastUI"],
-      featured: true
+      featured: true,
     },
     {
       id: 2,
@@ -29,10 +29,17 @@ function Experience() {
         "Built scalable UI component library using Tailwind CSS and FastUI ensuring consistency across projects",
         "Developed high-performance, responsive frontend with Next.js and TypeScript",
         "Created dynamic web apps with React.js, Django, and Docker for efficient data management",
-        "Implemented real-time functionality with server-side deployment via WinSP and Putty"
+        "Implemented real-time functionality with server-side deployment via WinSP and Putty",
       ],
-      technologies: ["Next.js", "TypeScript", "React.js", "Django", "Docker", "Python"],
-      featured: true
+      technologies: [
+        "Next.js",
+        "TypeScript",
+        "React.js",
+        "Django",
+        "Docker",
+        "Python",
+      ],
+      featured: true,
     },
     {
       id: 3,
@@ -45,10 +52,16 @@ function Experience() {
         "Created responsive mobile interfaces using Angular.js (RxJS), Ionic, and TypeScript",
         "Developed reusable component library to accelerate development across multiple projects",
         "Ensured smooth performance and consistent design language across mobile platforms",
-        "Delivered maintainable, accessible frontend solutions through collaborative code reviews"
+        "Delivered maintainable, accessible frontend solutions through collaborative code reviews",
       ],
-      technologies: ["Angular.js", "RxJS", "Ionic", "TypeScript", "Tailwind CSS"],
-      featured: false
+      technologies: [
+        "Angular.js",
+        "RxJS",
+        "Ionic",
+        "TypeScript",
+        "Tailwind CSS",
+      ],
+      featured: false,
     },
     {
       id: 4,
@@ -61,10 +74,10 @@ function Experience() {
         "Drove build of high-performance Next.js application integrating REST APIs",
         "Engineered scalable UI component library reducing development cycles by 30%",
         "Executed thorough code reviews ensuring WCAG accessibility compliance",
-        "Delivered pixel-accurate interfaces with advanced layout engineering"
+        "Delivered pixel-accurate interfaces with advanced layout engineering",
       ],
       technologies: ["Next.js", "JavaScript", "Tailwind CSS", "FastUI"],
-      featured: false
+      featured: false,
     },
     {
       id: 5,
@@ -77,10 +90,10 @@ function Experience() {
         "Collaborated with product designers and backend developers on client-facing web projects",
         "Delivered responsive, scalable UIs aligned with design specs and business goals",
         "Developed dynamic UI components enhancing user engagement and site performance",
-        "Customized WordPress themes optimizing layout design and brand identity"
+        "Customized WordPress themes optimizing layout design and brand identity",
       ],
       technologies: ["React.js", "JavaScript", "Bootstrap", "WordPress"],
-      featured: false
+      featured: false,
     },
     {
       id: 6,
@@ -93,37 +106,45 @@ function Experience() {
         "Built scalable web applications using React.js and Node.js/Express.js, improving performance by 30%",
         "Implemented JWT authentication for secure user access and integrated RESTful APIs",
         "Translated wireframes into responsive interfaces using Tailwind CSS, reducing load time by 20%",
-        "Structured APIs with Swagger documentation and integrated Cloudinary cutting storage costs by 15%"
+        "Structured APIs with Swagger documentation and integrated Cloudinary cutting storage costs by 15%",
       ],
-      technologies: ["React.js", "Node.js", "Express.js", "MongoDB", "JWT", "Cloudinary"],
-      featured: false
-    }
+      technologies: [
+        "React.js",
+        "Node.js",
+        "Express.js",
+        "MongoDB",
+        "JWT",
+        "Cloudinary",
+      ],
+      featured: false,
+    },
   ];
 
-  const featuredExperiences = experiences.filter(exp => exp.featured);
-  const otherExperiences = experiences.filter(exp => !exp.featured);
+  const featuredExperiences = experiences.filter((exp) => exp.featured);
+  const otherExperiences = experiences.filter((exp) => !exp.featured);
 
   return (
-    <section id="experience" className="py-20 lg:py-32 text-white bg-gradient-to-b from-gray-900 to-black">
+    <section
+      id="experience"
+      className="py-20 lg:py-32 text-white bg-gradient-to-b from-gray-900 to-black"
+    >
       <div className="container mx-auto px-4">
         {/* Header */}
         <div className="text-center mb-16 lg:mb-20">
           <h2 className="text-4xl lg:text-6xl font-bold bg-gradient-to-r from-white to-gray-400 bg-clip-text text-transparent mb-4">
-            Professional Journey
+            Professional Experience
           </h2>
           <div className="w-24 h-1 bg-gradient-to-r from-brandyellow to-orange-400 rounded-full mx-auto mb-6" />
           <p className="text-xl text-gray-400 max-w-2xl mx-auto">
-            Building scalable solutions and delivering exceptional user experiences across diverse tech stacks
+            Building scalable solutions and delivering exceptional user
+            experiences across diverse tech stacks
           </p>
         </div>
 
         {/* Featured Experiences */}
         <div className="space-y-12 mb-20">
           {featuredExperiences.map((experience, index) => (
-            <div 
-              key={experience.id}
-              className="group relative"
-            >
+            <div key={experience.id} className="group relative">
               <div className="bg-gradient-to-br from-white/5 to-white/10 rounded-3xl p-8 lg:p-12 border border-white/10 hover:border-brandyellow/30 transition-all duration-500 hover:scale-[1.02] hover:shadow-2xl hover:shadow-brandyellow/10">
                 {/* Header */}
                 <div className="flex flex-col lg:flex-row lg:items-start lg:justify-between mb-6">
@@ -157,10 +178,15 @@ function Experience() {
 
                 {/* Achievements */}
                 <div className="mb-6">
-                  <h4 className="text-lg font-semibold text-brandyellow mb-4">Key Achievements</h4>
+                  <h4 className="text-lg font-semibold text-brandyellow mb-4">
+                    Key Achievements
+                  </h4>
                   <ul className="space-y-3">
                     {experience.achievements.map((achievement, idx) => (
-                      <li key={idx} className="flex items-start gap-3 text-gray-300">
+                      <li
+                        key={idx}
+                        className="flex items-start gap-3 text-gray-300"
+                      >
                         <span className="text-brandyellow mt-1">▸</span>
                         <span>{achievement}</span>
                       </li>
@@ -170,10 +196,12 @@ function Experience() {
 
                 {/* Technologies */}
                 <div>
-                  <h4 className="text-lg font-semibold text-brandyellow mb-3">Technologies Used</h4>
+                  <h4 className="text-lg font-semibold text-brandyellow mb-3">
+                    Technologies Used
+                  </h4>
                   <div className="flex flex-wrap gap-2">
                     {experience.technologies.map((tech, idx) => (
-                      <span 
+                      <span
                         key={idx}
                         className="bg-white/10 backdrop-blur-sm text-white px-3 py-2 rounded-lg text-sm border border-white/20 hover:bg-brandyellow/20 hover:border-brandyellow/50 transition-all duration-300"
                       >
@@ -194,7 +222,7 @@ function Experience() {
           </h3>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {otherExperiences.map((experience) => (
-              <div 
+              <div
                 key={experience.id}
                 className="group bg-gradient-to-br from-white/5 to-white/10 rounded-2xl p-6 border border-white/10 hover:border-brandyellow/30 transition-all duration-500 hover:scale-105 hover:shadow-xl hover:shadow-brandyellow/10"
               >
@@ -216,17 +244,22 @@ function Experience() {
                 </div>
 
                 <div className="space-y-3 mb-4">
-                  {experience.achievements.slice(0, 2).map((achievement, idx) => (
-                    <p key={idx} className="text-gray-400 text-sm flex items-start gap-2">
-                      <span className="text-brandyellow mt-1">•</span>
-                      {achievement}
-                    </p>
-                  ))}
+                  {experience.achievements
+                    .slice(0, 2)
+                    .map((achievement, idx) => (
+                      <p
+                        key={idx}
+                        className="text-gray-400 text-sm flex items-start gap-2"
+                      >
+                        <span className="text-brandyellow mt-1">•</span>
+                        {achievement}
+                      </p>
+                    ))}
                 </div>
 
                 <div className="flex flex-wrap gap-1">
                   {experience.technologies.slice(0, 4).map((tech, idx) => (
-                    <span 
+                    <span
                       key={idx}
                       className="bg-white/10 text-white px-2 py-1 rounded text-xs border border-white/20"
                     >

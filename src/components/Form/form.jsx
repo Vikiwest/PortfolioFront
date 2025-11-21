@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { toast } from "react-toastify";
 import { FaPaperPlane, FaUser, FaEnvelope, FaComment } from "react-icons/fa";
+import emailjs from "@emailjs/browser";
 
 const ContactForm = () => {
   const [formData, setFormData] = useState({
@@ -12,6 +13,14 @@ const ContactForm = () => {
   const [submitted, setSubmitted] = useState(false);
   const [isSubmitting, setIsSubmitting] = useState(false);
 
+  // EmailJS configuration - YOU NEED TO GET THESE FROM EMAILJS DASHBOARD
+  // EmailJS configuration - SECURE VERSION
+  const EMAILJS_CONFIG = {
+    serviceId: import.meta.env.VITE_EMAILJS_SERVICE_ID,
+    templateId: import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
+    publicKey: import.meta.env.VITE_EMAILJS_PUBLIC_KEY,
+  };
+
   const handleChange = (e) => {
     const { name, value } = e.target;
     setFormData((prevData) => ({
@@ -20,34 +29,104 @@ const ContactForm = () => {
     }));
   };
 
-  const handleSubmit = async (e) => {
-    e.preventDefault();
-    setIsSubmitting(true);
-
+  const sendNotificationEmail = async () => {
     try {
+      // Send notification to yourself via EmailJS
+      const emailjsResult = await emailjs.send(
+        EMAILJS_CONFIG.serviceId,
+        EMAILJS_CONFIG.templateId,
+        {
+          from_name: formData.name,
+          from_email: formData.email,
+          message: formData.message,
+          reply_to: formData.email,
+          to_email: "chidiolorunda@gmail.com",
+        },
+        EMAILJS_CONFIG.publicKey
+      );
+
+      console.log("✅ EmailJS notification sent:", emailjsResult);
+      return true;
+    } catch (emailjsError) {
+      console.error("❌ EmailJS failed:", emailjsError);
+      // Don't fail the entire process if EmailJS fails
+      return false;
+    }
+  };
+
+  const sendAutoReply = async () => {
+    try {
+      // Send auto-reply via your backend
+      const controller = new AbortController();
+      const timeoutId = setTimeout(() => controller.abort(), 30000);
+
       const response = await fetch(
         "https://portfolio-zkup.onrender.com/send-email",
         {
           method: "POST",
           headers: { "Content-Type": "application/json" },
           body: JSON.stringify(formData),
+          signal: controller.signal,
         }
       );
 
-      if (response.ok) {
+      clearTimeout(timeoutId);
+
+      if (!response.ok) {
+        throw new Error(`Backend responded with status: ${response.status}`);
+      }
+
+      const result = await response.json();
+      console.log("✅ Backend auto-reply sent:", result);
+      return true;
+    } catch (backendError) {
+      console.error("❌ Backend auto-reply failed:", backendError);
+      // Don't fail the entire process if backend fails
+      return false;
+    }
+  };
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    setIsSubmitting(true);
+
+    try {
+      console.log("Starting hybrid email process...");
+
+      // Step 1: Send notification to yourself via EmailJS
+      const emailjsSuccess = await sendNotificationEmail();
+
+      // Step 2: Send auto-reply to user via your backend
+      const backendSuccess = await sendAutoReply();
+
+      if (emailjsSuccess || backendSuccess) {
         setSubmitted(true);
         setFormData({ name: "", email: "", message: "" });
-        toast.success(
-          "🎉 Message sent successfully! I'll get back to you soon."
-        );
+
+        if (emailjsSuccess && backendSuccess) {
+          toast.success(
+            "🎉 Message sent successfully! You'll receive a confirmation email shortly."
+          );
+        } else if (emailjsSuccess) {
+          toast.success("✅ Message received! I'll get back to you soon.");
+        } else if (backendSuccess) {
+          toast.success("✅ Message sent! Check your email for confirmation.");
+        }
       } else {
-        toast.error("❌ Failed to send message. Please try again.");
+        throw new Error("Both email services failed");
       }
     } catch (error) {
-      console.error("Error:", error);
-      toast.error(
-        "❌ Network error. Please check your connection and try again."
-      );
+      console.error("Hybrid approach error:", error);
+
+      if (error.name === "AbortError") {
+        toast.error("⏰ Request timeout. Please try again in 30 seconds.");
+      } else if (error.message.includes("Failed to fetch")) {
+        toast.error("🌐 Network error. Please check your connection.");
+      } else {
+        toast.error(
+          "❌ Failed to send message. Please try emailing directly: chidiolorunda@gmail.com"
+        );
+      }
     } finally {
       setIsSubmitting(false);
     }
@@ -58,7 +137,7 @@ const ContactForm = () => {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <div className="text-center mb-16">
-          <h2 className="text-4xl lg:text-6xl font-bold bg-gradient-to-r from-white to-gray-400 bg-clip-text text-white/10 mb-4">
+          <h2 className="text-4xl text-white lg:text-6xl font-bold bg-gradient-to-r from-white to-gray-400 bg-clip-text text-transparent mb-4">
             Get In Touch
           </h2>
           <div className="w-24 h-1 bg-gradient-to-r from-brandyellow to-orange-400 rounded-full mx-auto mb-6" />
@@ -87,6 +166,7 @@ const ContactForm = () => {
                   placeholder="Enter your full name"
                   required
                   disabled={isSubmitting}
+                  maxLength={100}
                 />
               </div>
 
@@ -123,7 +203,11 @@ const ContactForm = () => {
                   rows="6"
                   required
                   disabled={isSubmitting}
+                  maxLength={2000}
                 />
+                <div className="text-right text-sm text-gray-400 mt-2">
+                  {formData.message.length}/2000
+                </div>
               </div>
 
               {/* Submit Button */}
@@ -163,9 +247,9 @@ const ContactForm = () => {
           {/* Success Message */}
           {submitted && (
             <div className="mt-8 p-6 bg-green-500/10 border border-green-500/20 rounded-2xl text-center">
-              <p className="text-green-400 text-lg font-semibold">
-                ✅ Thank you for your message! I'll get back to you within 24
-                hours.
+              <p className="text-white/10 text-lg font-semibold ">
+                ✅ Thank you for your message! You should receive a confirmation
+                email shortly.
               </p>
             </div>
           )}
