@@ -108,9 +108,9 @@ const ContactForm = () => {
             "🎉 Message sent successfully! You'll receive a confirmation email shortly."
           );
         } else if (emailjsSuccess) {
-          toast.success("✅ Message received! I'll get back to you soon.");
+          toast.success(" Message received! I'll get back to you soon.");
         } else if (backendSuccess) {
-          toast.success("✅ Message sent! Check your email for confirmation.");
+          toast.success(" Message sent! Check your email for confirmation.");
         }
       } else {
         throw new Error("Both email services failed");
