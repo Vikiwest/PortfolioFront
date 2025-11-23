@@ -39,7 +39,7 @@ const skillCategories = [
     skills: [
       { name: "JavaScript", icon: Js, level: "Advanced" },
       { name: "TypeScript", icon: Ts, level: "Intermediate" },
-      { name: "Python", icon: Python, level: "Intermediate" },
+      { name: "Python", icon: Python, level: "Beginner" },
     ],
   },
   {
