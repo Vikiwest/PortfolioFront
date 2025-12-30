@@ -32,7 +32,7 @@ function Hero() {
               <span className="text-white">Hello, I'm</span>
               <br />
               <span className="bg-gradient-to-r from-brandyellow to-orange-400 bg-clip-text text-[#212121] ">
-                Olorunda Victory
+                Olorunda <span className="text-brandyellow">Victory</span>
               </span>
             </h1>
 
@@ -73,15 +73,13 @@ function Hero() {
             <div className="flex flex-wrap gap-8 pt-8 border-t border-white/20">
               <div className="text-center lg:text-left">
                 <div className="text-2xl font-bold text-white">20+</div>
-                <div className="text-gray-300 text-sm text-white/10">
+                <div className="text-gray-300 text-sm text-white">
                   Technologies
                 </div>
               </div>
               <div className="text-center lg:text-left">
                 <div className="text-2xl font-bold text-white">10+</div>
-                <div className="text-gray-300 text-sm text-white/10">
-                  Projects
-                </div>
+                <div className="text-gray-300 text-sm text-white">Projects</div>
               </div>
               {/* <div className="text-center lg:text-left">
                 <div className="text-2xl font-bold text-white">3+</div>
