@@ -56,7 +56,7 @@ function Footer() {
               <button
                 key={social.name}
                 onClick={() => handleSocialClick(social.name, social.url)}
-                className="group bg-white/10 backdrop-blur-sm border border-white/20 rounded-2xl p-4 transition-all duration-300 hover:bg-brandyellow/20 hover:border-brandyellow/50 hover:scale-110 hover:shadow-lg hover:shadow-brandyellow/20 cursor-pointer focus:outline-none focus:ring-2 focus:ring-brandyellow/50"
+                className="group bg-white backdrop-blur-sm border border-white/20 rounded-2xl p-4 transition-all duration-300 hover:bg-brandyellow/20 hover:border-brandyellow/50 hover:scale-110 hover:shadow-lg hover:shadow-brandyellow/20 cursor-pointer focus:outline-none focus:ring-2 focus:ring-brandyellow/50"
                 aria-label={`Visit my ${social.name}`}
               >
                 <img 

@@ -132,21 +132,21 @@ function About() {
           <div className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl p-8 hover:border-brandyellow/30 transition-all duration-300">
             <div className="text-3xl font-bold text-brandyellow mb-2">3+</div>
             <div className="text-white font-medium">Years in Tech</div>
-            <div className="text-white/10 text-sm mt-2">
+            <div className="text-white text-sm mt-2">
               From curiosity to career
             </div>
           </div>
           <div className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl p-8 hover:border-brandyellow/30 transition-all duration-300">
             <div className="text-3xl font-bold text-brandyellow mb-2">10+</div>
             <div className="text-white font-medium">Projects Built</div>
-            <div className="text-white/10 text-sm mt-2">
+            <div className="text-white text-sm mt-2">
               Production ready solutions
             </div>
           </div>
           <div className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl p-8 hover:border-brandyellow/30 transition-all duration-300">
             <div className="text-3xl font-bold text-brandyellow mb-2">20+</div>
             <div className="text-white font-medium">Technologies</div>
-            <div className="text-white/10 text-sm mt-2">Across full stack</div>
+            <div className="text-white text-sm mt-2">Across full stack</div>
           </div>
         </div>
       </div>

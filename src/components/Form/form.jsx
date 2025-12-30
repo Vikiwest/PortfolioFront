@@ -141,7 +141,7 @@ const ContactForm = () => {
             Get In Touch
           </h2>
           <div className="w-24 h-1 bg-gradient-to-r from-brandyellow to-orange-400 rounded-full mx-auto mb-6" />
-          <p className="text-xl text-white/10 max-w-2xl mx-auto">
+          <p className="text-xl text-white max-w-2xl mx-auto">
             Ready to bring your ideas to life? Let's discuss your project and
             create something amazing together.
           </p>
@@ -233,7 +233,7 @@ const ContactForm = () => {
             {/* Alternative Contact Info */}
             <div className="mt-12 pt-8 border-t border-white/10">
               <div className="text-center">
-                <p className="text-gray-400 mb-4">Prefer direct contact?</p>
+                <p className="text-white mb-4">Prefer direct contact?</p>
                 <a
                   href="mailto:chidiolorunda@gmail.com"
                   className="text-brandyellow hover:text-orange-400 font-semibold text-lg transition-colors duration-300"
@@ -259,15 +259,15 @@ const ContactForm = () => {
         <div className="mt-20 grid grid-cols-1 md:grid-cols-3 gap-8 max-w-4xl mx-auto">
           <div className="text-center p-6 bg-white/5 rounded-2xl border border-white/10">
             <div className="text-2xl font-bold text-brandyellow mb-2">24h</div>
-            <div className="text-white/10">Response Time</div>
+            <div className="text-white">Response Time</div>
           </div>
           <div className="text-center p-6 bg-white/5 rounded-2xl border border-white/10">
             <div className="text-2xl font-bold text-brandyellow mb-2">100%</div>
-            <div className="text-white/10">Project Discussion</div>
+            <div className="text-white">Project Discussion</div>
           </div>
           <div className="text-center p-6 bg-white/5 rounded-2xl border border-white/10">
             <div className="text-2xl font-bold text-brandyellow mb-2">Free</div>
-            <div className="text-white/10">Initial Consultation</div>
+            <div className="text-white">Initial Consultation</div>
           </div>
         </div>
       </div>
