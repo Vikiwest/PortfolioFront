@@ -72,19 +72,21 @@ function Hero() {
             {/* Quick Stats */}
             <div className="flex flex-wrap gap-8 pt-8 border-t border-white/20">
               <div className="text-center lg:text-left">
-                <div className="text-2xl font-bold text-white">20+</div>
-                <div className="text-gray-300 text-sm text-white">
-                  Technologies
+                <div className="text-2xl font-bold text-white">3+</div>
+                <div className="t text-sm text-white">
+                  Production Applications
                 </div>
               </div>
               <div className="text-center lg:text-left">
-                <div className="text-2xl font-bold text-white">10+</div>
-                <div className="text-gray-300 text-sm text-white">Projects</div>
+                <div className="text-2xl font-bold text-white">30%</div>
+                <div className=" text-sm text-white">
+                  Performance Improvements
+                </div>
               </div>
-              {/* <div className="text-center lg:text-left">
-                <div className="text-2xl font-bold text-white">3+</div>
-                <div className="text-gray-300 text-sm">Years Experience</div>
-              </div> */}
+              <div className="text-center lg:text-left">
+                <div className="text-2xl font-bold text-white">100%+</div>
+                <div className="text-sm text-white">WCAG Compliant</div>
+              </div>
             </div>
           </div>
 
