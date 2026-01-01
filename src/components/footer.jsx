@@ -94,12 +94,12 @@ function Footer() {
           >
             View Projects
           </a> */}
-          <a
+          {/* <a
             href="/contact"
             className="bg-white/10 hover:bg-white/20 text-white font-semibold px-6 py-3 rounded-full border border-white/20 transition-all duration-300 hover:scale-105"
           >
             Get In Touch
-          </a>
+          </a> */}
         </div>
 
         {/* Copyright */}
