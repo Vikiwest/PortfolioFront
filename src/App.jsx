@@ -4,7 +4,7 @@ import Navbar from "./components/navbar/nav";
 import Herosection from "./components/herosection/hero";
 import Experience from "./components/Experience/experience"; 
 import Projects from "./components/Projectsection/projects";
-import Testimonials from "./components/Testimonials/Testimonials"; // ADD THIS
+import Testimonials from "./components/testimonials/testimonials"; // ADD THIS
 import Form from "./components/Form/form";
 import Footer from "./components/footer";
 import About from "./components/pages/about";
