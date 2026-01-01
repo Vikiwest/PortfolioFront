@@ -38,8 +38,8 @@ function Hero() {
 
             {/* Description */}
             <p className="text-xl sm:text-2xl text-white max-w-2xl leading-relaxed">
-              Crafting digital experiences with modern web technologies. I build
-              scalable full-stack applications that solve real-world problems.
+              I build high-performance web applications that increase
+              conversions and improve user engagement
             </p>
 
             {/* CTA Buttons */}
