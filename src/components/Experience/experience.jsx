@@ -6,7 +6,7 @@ function Experience() {
       id: 1,
       company: "Monsieur Cruise LTD",
       position: "Frontend Developer",
-      period: "Mar 2024 - Present",
+      period: "Mar 2025 - Present",
       type: "Contract",
       location: "Remote",
       achievements: [
@@ -26,10 +26,10 @@ function Experience() {
     },
     {
       id: 2,
-      company: "Shoft Africa", // PROMOTE THIS TO FEATURED
+      company: "Shoft Africa",
       position: "Frontend Developer",
-      period: "Sep 2024 - Present", // CHANGED FROM 2025
-      type: "Contract", // CHANGED FROM Full-time
+      period: "Sep 2024 - Present",
+      type: "Full-time",
       location: "Remote",
       achievements: [
         "Designed and developed corporate website showcasing business credentials, successfully securing Paystack payment gateway approval for Oniduuru mobile app",
@@ -44,13 +44,13 @@ function Experience() {
         "TypeScript",
         "Tailwind CSS",
       ],
-      featured: true, // CHANGED TO TRUE
+      featured: true,
     },
     {
       id: 3,
       company: "Intexicon Limited",
       position: "Full-Stack Developer",
-      period: "Aug 2024 - Present", // CHANGED FROM 2025
+      period: "Aug 2025 - Present",
       type: "Contract",
       location: "Remote",
       achievements: [
@@ -60,7 +60,7 @@ function Experience() {
         "Implemented automated deployment pipelines reducing deployment downtime by 50%",
       ],
       technologies: ["Next.js", "TypeScript", "React.js", "Django", "Docker"],
-      featured: false, // CHANGED TO FALSE
+      featured: false, 
     },
     {
       id: 4,
@@ -82,8 +82,8 @@ function Experience() {
       id: 5,
       company: "Xpertech Solutions Group",
       position: "Frontend Developer",
-      period: "Feb 2024 - Apr 2024", // CHANGED FROM 2025
-      type: "Contract", // CHANGED FROM Full-time
+      period: "Feb 2025 - Apr 2025", 
+      type: "Contract", 
       location: "Egbeda, Lagos",
       achievements: [
         "Delivered responsive UIs for client-facing applications aligned with business requirements",
