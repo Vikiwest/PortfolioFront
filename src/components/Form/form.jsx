@@ -258,7 +258,7 @@ const ContactForm = () => {
         {/* Quick Stats */}
         <div className="mt-20 grid grid-cols-1 md:grid-cols-3 gap-8 max-w-4xl mx-auto">
           <div className="text-center p-6 bg-white/5 rounded-2xl border border-white/10">
-            <div className="text-2xl font-bold text-brandyellow mb-2">24h</div>
+            <div className="text-2xl font-bold text-brandyellow mb-2">20h</div>
             <div className="text-white">Response Time</div>
           </div>
           <div className="text-center p-6 bg-white/5 rounded-2xl border border-white/10">

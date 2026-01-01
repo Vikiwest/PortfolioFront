@@ -4,6 +4,7 @@ import Navbar from "./components/navbar/nav";
 import Herosection from "./components/herosection/hero";
 import Experience from "./components/Experience/experience"; 
 import Projects from "./components/Projectsection/projects";
+import Testimonials from "./components/Testimonials/Testimonials"; // ADD THIS
 import Form from "./components/Form/form";
 import Footer from "./components/footer";
 import About from "./components/pages/about";
@@ -50,8 +51,9 @@ function App() {
                 <>
                   <Herosection />
                   <Skills />
-                  <Experience /> {/* Add Experience section here */}
+                  <Experience />
                   <Projects />
+                  <Testimonials /> {/* ADD THIS LINE */}
                 </>
               }
             />

@@ -38,8 +38,10 @@ function Hero() {
 
             {/* Description */}
             <p className="text-xl sm:text-2xl text-white max-w-2xl leading-relaxed">
-              I build high-performance web applications that increase
-              conversions and improve user engagement
+              Frontend developer specializing in React & Next.js. I build
+              high-performance applications that improve user engagement and
+              drive business results—like securing payment gateway approvals
+              that enable revenue growth.
             </p>
 
             {/* CTA Buttons */}

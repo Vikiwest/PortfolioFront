@@ -142,13 +142,13 @@ function Skills() {
                               : "bg-yellow-500/20 text-yellow-300"
                           } text-sm sm:text-base`}
                         >
-                          {skill.level}
+                          {/* {skill.level} */}
                         </span>
                       </div>
                     </div>
 
                     {/* Progress Bar */}
-                    <div className="mt-4 w-full">
+                    {/* <div className="mt-4 w-full">
                       <div
                         className="flex justify-between text-gray-400 mb-1 text-sm"
                       >
@@ -165,7 +165,7 @@ function Skills() {
                           }}
                         ></div>
                       </div>
-                    </div>
+                    </div> */}
                   </div>
                 ))}
               </div>
