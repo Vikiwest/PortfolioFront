@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import GitHubbtn from "./githubbtn";
 import Linkedinbtn from "./linkedinbtn";
-import HeroImage from "../../assets/Portfolio-img.jpeg";
+import HeroImage from "../../assets/Portfolio-img.png";
 
 function Hero() {
   const [isHovered, setIsHovered] = useState(false);
